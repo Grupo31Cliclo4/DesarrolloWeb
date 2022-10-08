@@ -1,0 +1,63 @@
+<!--minuto 1:01-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicacion</title>
+    <!--Bootstrap CDN-->
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+</head>
+<body>
+    <!--navegacion-->
+    <nav class="navbar navbar-ligth bg-light">
+        <a href="/" class="navbar-brand">
+            JavaScript-Aplicacion
+        </a>
+    </nav>
+    <div class="container" >
+        <!--contenido-->
+        <div id="App" class="row pt-5">
+            <div class="col-md-4">
+                <div class="card-header">
+                    <h4>Registrar empleado</h4>
+                </div>
+                <form id="empleado-form" class="card-body">
+                    <div class="form-group">
+                        <input type="text" id="name"
+                        placeholder="Nombre empleado"
+                        class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="email"
+                        placeholder="Email empleado"
+                        class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="rol"
+                        placeholder="Rol empleado"
+                        class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="empresa"
+                        placeholder="Empresa empleado"
+                        class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" name="año" id="año" value="2022"
+                        min="1990" max="2022" placeholder="Año ingreso empleado">
+                    </div>
+                
+                    <input type="submit" value="Save" class="btn btn-primary btn-block">
+                </form>
+            </div>
+                <div id="empleado-list" class="col.md-8"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
