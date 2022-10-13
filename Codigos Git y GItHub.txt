@@ -1,0 +1,81 @@
+CREA UN NUEVO REPOSITORIO EN LINEA DE COMANDO
+echo "#NOMBRE_DEL_PROYECTO" >> README.md 
+git init 
+git add README.md 
+git commit -m "MENSAJE" 
+git branch -M main 
+git remote add origin LINK_RUTA
+git push - u origin main
+
+INSERTAR UN REPOSITORO EXISTENTE DESDE LA LINEA DE COMANDO
+git remote add origin https://github.com/Grupo31Cliclo4/DesarrolloWeb.git
+git branch -M main
+git push -u origin main
+
+INICIALIZAR EN GIT
+git init
+
+CLONAR REPOSITORIO
+git clone https://github.com/Grupo31Cliclo4/DesarrolloWeb.git
+
+SINCRONIZACIÓN DE REPOSITORIO LOCAL A REMOTO
+git status
+
+AÑADIR ARCHIVOS CON CAMBIOS (TODOS O UNO EN ESPECIFICO)
+git add .
+git add *
+git add nombre_del_archivo.extension_archivo                             
+
+AGREGAR UN COMMIT
+git commit -m "nombre-del-comit"
+
+SINCRONIZANDO CON REPOSITORIO REMOTO
+git push origin main
+git push -v origin main
+
+SINCRONIZACIÓN DE REPOSITORIO REMOTO A LOCAL
+git pull origin xxx
+
+VER RAMAS
+git branch
+git branch -v
+git branch -a
+git branch -r
+
+más detalles acerca de las ramas  -v (o-vv, 0--verbose)
+ramas locales y remotas -a (o--all)
+ramas remotas -r (o --remotes).
+
+OPCIONES PARA MANEJAR TUS CAMBIOS EN LOS ARCHIVOS:
+git checkout
+git commit
+git stash
+
+CREAR UNA NUEVA RAMA
+git branch NOMBRE-NUEVA-RAMA
+
+CAMBIAR DE RAMA
+git checkout NOMBRE-RAMA
+
+CREAR Y MOVERTE A LA NUEVA RAMA AL MISMO TIEMPO.
+git checkout -b NOMBRE-NUEVA-RAMA
+
+RENOMBRAR UNA RAMA
+git branch -m VIEJO-NOMBRE-RAMA NUEVO-NOMBRE-RAMA
+
+# Alternativa
+git branch --move VIEJO-NOMBRE-RAMA NUEVO-NOMBRE-RAMA
+
+ELIMINAR UNA RAMA
+git branch -d RAMA-A-ELIMINAR
+
+# Alternativa:
+git branch --delete RAMA-A-ELIMINAR
+
+COMPARAR RAMAS
+git diff PRIMERA-RAMA..SEGUNDA-RAMA
+
+AYUDA 
+git help branch
+git branch --help
+man git-branch
