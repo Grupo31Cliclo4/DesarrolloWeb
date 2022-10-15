@@ -1,0 +1,42 @@
+...or create a new repository on the command line    ANDRES CAMILO PEREZ BOTERO 
+echo " # pruebas" >> README.md
+
+git init
+
+git add README.md                                    "git status" 
+
+git commit -m "first commit"    "agrego páginas HTML"
+
+git branch -M main
+
+
+git remote add origin https://github.com/usuario/Pruebas.git
+
+
+git push -u origin main
+
+
+
+
+
+
+...or push an existing repository from the command line 
+
+git remote add origin https://github.com/usuario/Pruebas.git
+
+
+git branch -M main
+
+
+git push -u origin main
+
+
+
+
+...or import code from another repository 
+You can initialize this repository with code from a subversion, Mercuarial, or TFS project.
+
+
+
+git config --global user.name "usuario"           git config --global user.email "usuario@hotmail.com" 
+
